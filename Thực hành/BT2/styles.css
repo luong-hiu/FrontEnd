@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'gg sans';
+}
+
+@font-face {
+    font-family: 'gg sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./font/gg sans Regular.woff'), url('gg sans Regular.woff') format('woff');
+    }
+
+body{
+    height: 100vh;
+
+    background-image: url(./image/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.logo{
+    position:absolute;
+    top: 48px;
+    left: 48px;
+    width: 125px;
+}
+
+.box{
+    width: 784px;
+    height: 408px;
+    background-color: #313338;
+    border-radius: 5px;
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
+}
+
+.box .login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .login .login_container{
+    width: 416px;
+    height: 340px;
+}
+
+.box .login .login_container .header {
+    text-align: center;
+    height: 58px;  
+    margin-bottom: 20px;
+}
+.box .login .login_container .header h1{
+    font-size: 24px;
+    font-weight: 300px;
+    line-height: 24px;
+    margin-bottom: 13px;
+    color: #f2f3f5;
+}
+
+.box .login .login_container .header span{
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 16px;
+    color: #b5bac1;
+}
+
+.box .login .login_container .form_login .emailOrphone,
+.box .login .login_container .form_login .password{
+    display: flex;
+    flex-direction: column;
+}
+
+.box .login .login_container .form_login .emailOrphone {
+    margin-bottom: 20px;
+}
+.box .login .login_container .form_login .password{
+    margin-bottom: 6px;
+}
+
+.box .login .login_container .form_login .emailOrphone label,
+.box .login .login_container .form_login .password label {
+    font-size: 12px;
+    color: #b1b5bc;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.box .login .login_container .form_login .emailOrphone span,
+.box .login .login_container .form_login .password span{
+    color: red;
+}
+
+.box .login .login_container .form_login .emailOrphone input,
+.box .login .login_container .form_login .password input {
+    height: 40px;
+    text-align: start;
+    border-radius: 3px;
+    border: none;
+    background-color: #1e1f22;
+    color: #f2f3f5;
+    font-size: 16px;   
+}
+
+.box .login .login_container .form_login .forgotpassword {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 22px;
+    color: #3794da;
+    font-weight: bold;
+}
+
+.box .login .login_container .form_login .forgotpassword a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.box .login .login_container .form_login .button_login button{
+    width: 100%;
+    height: 44px;
+    border-radius: 3px;
+    border: none;
+    background-color: #586bf6;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #f2f3f5;  
+
+    cursor: pointer;
+}
+
+.box .login .login_container .form_login .register {
+    margin-top:12px ;
+    color: #9197a1;
+    font-size: 14px;
+    line-height: 16px;
+}
+.box .login .login_container .form_login .register a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #3794da;
+    font-weight: bold;
+}
+
+.box .login .login_container .form_login .register a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.box .login .QR_container {
+    width: 240px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box .login .QR_container .QR_scan{
+    margin-bottom: 32px;
+    margin-top: 7px;
+}
+
+.box .login .QR_container h1 {
+    margin-bottom: 8px;
+    color: #f2f3f5;
+}
+
+.box .login .QR_container p {
+    margin-bottom: 9px;
+    color: #b5bac1;
+}
+
+.box .login .QR_container a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #3794da;
+}
+
+.box .login .QR_container a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
