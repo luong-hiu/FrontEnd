@@ -860,6 +860,9 @@ img {
     .video_container .subscribe {
         margin: 50px;
     }
+    .video_container .subscribe .title_subscribe {
+        text-align: center;
+    }
     /* End Video Container */
 
     /* Showcase Start */
@@ -880,7 +883,11 @@ img {
     /* Showcase End */
 
 }
-
+@media screen  and (max-width:1040px){
+    .video_container .subscribe .title_subscribe {
+        text-align: center;
+    }
+}
 @media screen and (max-width:765px) {
     header {
         padding: 0 10px;
