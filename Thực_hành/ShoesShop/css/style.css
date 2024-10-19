@@ -1,0 +1,187 @@
+.header {
+    background-color: black;
+}
+.header-down a{
+    color: black;  
+}
+
+.header-down a.active {
+    border-bottom: solid 1px black;
+    font-weight: 500;
+}
+
+.header-down .nav-item {
+    height: 40px;
+    display: flex; 
+    align-items: center; 
+    
+}
+
+.header-down .nav-item .nav-link {
+    padding: 0; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    line-height: 39px; 
+}
+.slide {
+    position: relative;
+}
+.slide::after{
+    content: "";
+    background-image: url(./images/slide_under.png);
+    position: absolute; 
+    background-size: cover;
+    bottom: 0;
+    left: 0; 
+    width: 98.9vw;
+    height: 561px;
+    z-index: -1; 
+}
+
+.slide-container {
+    width: 90vw;   
+}
+
+.slick-prev:before {
+    content: "";
+    display: block;
+    width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-right: 30px solid #0000002a ;
+	border-bottom: 30px solid transparent;
+    
+}
+.slick-next:before{
+    content: "";
+    display: block;
+    width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-left: 30px solid #0000002a ;
+	border-bottom: 30px solid transparent;
+}
+
+.slide-content .slide-button {
+    width: 25vw;
+}
+.slide-content .slide-button button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    width: 100%; 
+    gap: 100px;
+  }
+
+.grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.grid-container .grid-item button{
+    border: none;
+    padding: 0;
+}
+
+
+/* Start Detail.html */
+#product-detail{
+
+}
+
+#image-product-detail{
+    margin-left: 5%;
+    background-color:#F8F8F8;
+}
+#content-product-detail{
+    width: 40%;
+    margin-left: 10%;
+}
+#content-product-detail h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+}
+#content-product-detail span{
+    color:#1ED90E;
+    font-size: 24px;
+}
+#content-product-detail #size-product p {
+    width: 50px;
+    height: 50px;
+    background-color: #aeadad;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px; 
+    font-weight: 700;
+    font-size: 24px;
+}
+#quantityBtn button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #708ff8;
+    font-size: 30px;
+    color: white;
+}
+#quantityBtn p { 
+    width: 55px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+#content-product-detail>button {
+    width: 175px;
+    height: 64px;
+    border: none;
+    background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+    font-size: 24px;
+    color: white;
+}
+/* End Detail.html */
+
+
+/* Start Reponsive */
+@media screen and (max-width: 1350px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 300px);
+        gap:50px
+    }
+
+}
+@media screen and (max-width: 950px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 320px);
+        gap:50px
+    }
+    .slide-content {
+        flex-direction: column;
+    }
+    .slide-content .slide-button{
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 400px);
+        gap:45px
+    }
+}
+
+
+/* End Reponsive */
